@@ -1,0 +1,3 @@
+# Ignore cached python files and clangd
+__pycache__/
+.cache/
