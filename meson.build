@@ -28,7 +28,7 @@ py = import('python').find_installation(modules: ['torch'], pure: false)
 
 # Define our stable ABI targets
 python_stable_abi_target = '3.12'
-pytorch_stable_abi_target = '2.10'
+pytorch_stable_abi_target = '2.13'
 pytorch_stable_abi_target_major = pytorch_stable_abi_target.split('.')[0]
 pytorch_stable_abi_target_minor = pytorch_stable_abi_target.split('.')[1]
 stable_abi_script_template = 'print(hex(((0 + @0@) << 56) | ((0 + @1@) << 48)))'
